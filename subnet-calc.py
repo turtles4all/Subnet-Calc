@@ -1,13 +1,4 @@
-import re
-import socket
 def main():
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    myip = s.connect(("gmail.com",80))
-    s.close()
-    # print "My ip is ", myip
-
-
-
     ip = int(raw_input("IP :"))
     # cidr = int(raw_input("cidr "))
     mask = int(raw_input("Network Mask :"))
