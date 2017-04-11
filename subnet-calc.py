@@ -5,10 +5,12 @@ def main():
     addclass = 24
     cidr = int(cider(mask)) + addclass
     print "CIDR :", cidr
+
     nets = (2**(cidr - addclass))
     hosts = (2**(32 - cidr)) - 2
     neta = ip - (ip % (256 - mask))
     nneta = neta + (256 - mask)
+
     print "Network -------- : ", neta
     print "First -----------: ", neta + 1
     print "Last ------------: ", nneta - 2
